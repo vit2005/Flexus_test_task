@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SomeController : MonoBehaviour
+public class MovementController : MonoBehaviour
 {
     [SerializeField] private Transform shootingPoint;
     [SerializeField] private MortarTrajectory trajectory;
