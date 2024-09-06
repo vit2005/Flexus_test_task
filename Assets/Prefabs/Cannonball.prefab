@@ -125,4 +125,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gravity: -9.81
-  timeStep: 0.1
+  reflectReductionFactor: 0.5
