@@ -894,6 +894,7 @@ GameObject:
   m_Component:
   - component: {fileID: 705507995}
   - component: {fileID: 705507994}
+  - component: {fileID: 705507996}
   m_Layer: 0
   m_Name: Directional Light
   m_TagString: Untagged
@@ -978,6 +979,26 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!114 &705507996
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 705507993}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 1
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
 --- !u!1 &951533847
 GameObject:
   m_ObjectHideFlags: 0
@@ -1606,7 +1627,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0792fd5239a48546b45d7e950ac99df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cannonballPrefab: {fileID: 9205254548849545905, guid: 820534181a8a9134883486e537fea905, type: 3}
+  cannonballPrefab: {fileID: 9205254548849545905, guid: 820534181a8a9134883486e537fea905,
+    type: 3}
   spawnPoint: {fileID: 1879272243}
   forceController: {fileID: 951533850}
 --- !u!4 &1548878227
@@ -1943,7 +1965,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 091fd7ee1f76f5b4b8f5efb7babc7d2a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2040,7 +2062,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 091fd7ee1f76f5b4b8f5efb7babc7d2a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2161,7 +2183,8 @@ MonoBehaviour:
   decalCamera: {fileID: 2034413461}
   decalRenderTexture: {fileID: 8400000, guid: 2b25339400d9d00428ed14cd71d54d5d, type: 2}
   decalMaterial: {fileID: 2100000, guid: 381dae691388d694b9dbd8fdd6850b96, type: 2}
-  decalPrefab: {fileID: 3341520890076113831, guid: ba09df358569c3f449dd1555094c6922, type: 3}
+  decalPrefab: {fileID: 3341520890076113831, guid: ba09df358569c3f449dd1555094c6922,
+    type: 3}
 --- !u!1 &2065028992
 GameObject:
   m_ObjectHideFlags: 0
