@@ -1,6 +1,7 @@
 using UnityEngine;
 
-public class RotateObject : MonoBehaviour
+// Used on Camera
+public class MortarMovement : MonoBehaviour
 {
     [SerializeField] Transform capsule;
     public float rotationSpeed = 100f;  // Speed of rotation

@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 9205254548849545907}
   - component: {fileID: 9205254548849545904}
   - component: {fileID: 7338835529449200191}
+  - component: {fileID: 425560160004694495}
   m_Layer: 0
   m_Name: Cannonball
   m_TagString: Untagged
@@ -97,7 +98,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 0.2, y: 0.2, z: 0.2}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &9205254548849545904
 MonoBehaviour:
@@ -125,4 +126,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gravity: -9.81
+  collisionsBeforeExplode: 1
   reflectReductionFactor: 0.5
+--- !u!114 &425560160004694495
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9205254548849545905}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 014d2bdbc1ff96f40917ec3e95d9a248, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  paintColor: {r: 0.68235296, g: 0.21176471, b: 0.18431373, a: 1}
+  radius: 1
+  strength: 1
+  hardness: 1

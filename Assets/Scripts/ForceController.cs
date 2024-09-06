@@ -15,7 +15,7 @@ public class ForceController : MonoBehaviour
 
     public void Start()
     {
-        _value = (int)slider.value;
+        _value = (int)(slider.value * 100f);
     }
 
     public void OnValueChanged(Single value)
