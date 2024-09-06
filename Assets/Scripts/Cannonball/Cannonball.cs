@@ -8,7 +8,7 @@ public class Cannonball : MonoBehaviour
     [SerializeField] private float reflectReductionFactor; // Factor to reduce velocity after reflection
 
     public Action<Collider, Vector3, Vector3> OnCollision; // Event for handling decal creation
-    public Action OnExplode; // Event for handling explosion and camera shake
+    public Action<Vector3> OnExplode; // Event for handling explosion and camera shake
 
     private Vector3 velocity; // Current velocity
     private float gravity = -9.81f; // Gravity
@@ -50,7 +50,7 @@ public class Cannonball : MonoBehaviour
             }
             else
             {
-                OnExplode?.Invoke();
+                OnExplode?.Invoke(hitInfo.normal);
 
                 // Deactivate the cannonball
                 gameObject.SetActive(false);
